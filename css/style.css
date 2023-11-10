@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+}
+
+.main {
+  margin: 1rem auto;
+  width: 50rem;
+  min-height: 28rem;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 1.4rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.advice-app {
+  position: relative;
+  margin: 4rem;
+}
+.advice-app__title {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  color: hsl(150, 100%, 66%);
+}
+.advice-app__title--number {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  color: hsl(150, 100%, 66%);
+}
+.advice-app__advice {
+  margin-bottom: 3rem;
+  min-height: 9rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: hsl(193, 38%, 86%);
+}
+.advice-app__line {
+  margin-bottom: 6rem;
+  width: 100%;
+  background-image: url("../img/pattern-divider-mobile.svg");
+  background-position: center;
+  color: hsl(217, 19%, 24%);
+}
+.advice-app__button {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 50%);
+  padding: 2.7rem 2.7rem;
+  background-image: url("../img/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.advice-app__button:hover {
+  background-color: hsl(150, 66%, 64%);
+  box-shadow: 0 0 20px hsl(150, 66%, 64%);
+}
+
+@media (max-width: 300px) {
+  .main {
+    width: 24rem;
+    min-height: 36rem;
+  }
+  .advice-app {
+    margin: 4rem 2rem;
+  }
+  .advice-app__advice {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 300px) {
+  .main {
+    width: 26rem;
+    min-height: 36rem;
+  }
+}
+@media (min-width: 375px) {
+  .main {
+    width: 34rem;
+    min-height: 36rem;
+  }
+  .advice-app__advice,
+  .advice-app .title-number {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 512px) {
+  .main {
+    width: 50rem;
+    min-height: 28rem;
+  }
+  .advice-app {
+    margin: 4rem;
+  }
+  .advice-app__line {
+    background-image: url("../img/pattern-divider-desktop.svg");
+  }
+}/*# sourceMappingURL=style.css.map */
