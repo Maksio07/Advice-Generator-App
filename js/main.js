@@ -1,6 +1,7 @@
 const adviceArea = document.querySelector('.advice-app__advice')
 const adviceBtn = document.querySelector('.advice-app__button')
 const adviceNumber = document.querySelector('.advice-app__title--number');
+let lastAdvice;
 
 const API_LINK = 'https://api.adviceslip.com/advice'
 
@@ -19,4 +20,5 @@ const generateAdvice = () => {
 		})
 }
 
-adviceBtn.addEventListener('click', generateAdvice)
+window.addEventListener('DOMContentLoaded', generateAdvice);
+adviceBtn.addEventListener('click', generateAdvice);
